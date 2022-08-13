@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.body-grid {
+    display: grid;
+    grid-template-areas: 
+        "nav header header"
+        "nav sectionA sectionA"
+        "nav sectionB aside"
+        "nav sectionC aside"
+        "nav footer footer";
+    grid-template-columns: 20% auto 15%;
+    grid-template-rows: 100px 1fr 1fr 1fr 125px;
+    gap:10px;
+    min-height: 100vh;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.header {
+    grid-area: header;
+    background: #da0c0c;
+    background-image: linear-gradient(to top, #c61b1b , rgb(255, 255, 255));
+    background-image: url("../images/logo_f1.PNG");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+}
+
+.header_nav {
+    text-align: justify;
+    
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.sectionA {
+    grid-area: sectionA;
+    display: grid;
+}
+
+.sectionB {
+    grid-area: sectionB;
+    display: grid;
+}
+
+.sectionC {
+    grid-area: sectionC;
+    display: grid;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.nav_ul {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #222823;
+}
+
+.nav_li {
+    background: #c61b1b;
+    padding: 1em;
+}
+
+.nav_li a {
+    color: white;
+}
+
+
+.card {
+    border: 3px solid #c61b1b;
+}
+
+
+.div_h1 {
+    text-align: center; 
+    background-color: #CECECE;
+    font-size: large;
+}
+
+.div_h2 {
+    text-align: center;
+    background-color: #9b9c9e;
+    font-size: large;
+}
+
+.div_h3 {
+    text-align: center;
+    background-color: #9b9c9e;
+    font-size: large;
+}
+
+
+#a { 
+    font-size: large; 
+    font-style: normal;
+    font-weight: 100;
+    color: #222823;
+    border-color: #222823;
+}
+
+.table_div {
+    display: grid;
+    grid-template-areas: "table_table";
+    grid-template-rows: 30% auto 15%;
+    grid-template-columns: 100px 200px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 18px 18px; 
+  }
+
+    
+
+#p {
+    text-decoration: none;
+    color: rgb(87, 147, 149);
+    background-color: aliceblue;
+    border-top: #575A5E;
+    border-width: 10ch;
+}
+
+li {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    color: inherit;
+}
+
+.footer {
+    font-size: 1.4rem;
+    font-weight: 100;
+    max-height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-image: url("../images/pirelli_footer.png");
+    background-size: cover;
+    background-position: 0 50%;
+}
+
+.footer_div img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.footer_li {
+    color: white;
+    background:linear-gradient(45deg, rgba(198, 27, 27, .8), rgba(34, 40, 35, .8));
+    padding: 2rem 8rem;
+    border-radius: 0 .2em .2em 0;
+}
+
+
+@media (max-width: 800px) {
+    .body-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "header header header header"
+            "nav nav nav nav"
+            "sectionA sectionA sectionA sectionA"
+            "sectionB sectionB sectionB aside"
+            "sectionC sectionC sectionC aside"
+            "footer footer footer footer";
+        grid-template-rows: 100px 1fr 1fr 1fr 1fr 125px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .body-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "nav"
+            "sectionA"
+            "sectionB"
+            "sectionC"
+            "aside"
+            "footer";
+        grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 125px;
+    }
+}
