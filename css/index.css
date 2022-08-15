@@ -183,8 +183,9 @@ a{
             "header header header header"
             "nav nav nav nav"
             "sectionA sectionA sectionA sectionA"
-            "sectionB sectionB sectionB aside"
-            "sectionC sectionC sectionC aside"
+            "sectionB sectionB sectionB sectionB "
+            "sectionC sectionC sectionC sectionC "
+            "aside aside aside aside"
             "footer footer footer footer";
         grid-template-rows: 100px 1fr 1fr 1fr 1fr 125px;
     }
@@ -206,3 +207,4 @@ a{
         grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 125px;
     }
 }
+

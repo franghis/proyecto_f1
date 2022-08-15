@@ -188,23 +188,41 @@
     }
 }
 
-@media (max-width: 800px) {
+
+@media (max-width: 400px) {
     .body-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "nav"
+            "sectionA"
+            "sectionB"
+            "sectionC"
+            "aside"
+            "footer";
+        grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 125px;
+    }
+}
+
+@media (max-width: 800px) {
+    .body-gridB {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas:
             "header header header header"
             "nav nav nav nav"
             "sectionA sectionA sectionA sectionA"
-            "sectionB sectionB sectionB aside"
-            "sectionC sectionC sectionC aside"
+            "sectionB sectionB sectionB sectionB "
+            "sectionC sectionC sectionC sectionC "
+            "aside aside aside aside"
             "footer footer footer footer";
         grid-template-rows: 100px 1fr 1fr 1fr 1fr 125px;
     }
 }
 
 @media (max-width: 400px) {
-    .body-grid {
+    .body-gridB {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas:
