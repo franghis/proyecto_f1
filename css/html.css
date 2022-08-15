@@ -144,6 +144,13 @@
     gap: 18px 18px; 
   }
 /**/
+li {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
 
 .footer {
     grid-area: footer;
