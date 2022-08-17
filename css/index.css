@@ -13,7 +13,7 @@
         "nav sectionB aside"
         "nav sectionC aside"
         "nav footer footer";
-    grid-template-columns: 20% auto 15%;
+    grid-template-columns: 20% auto 17%;
     grid-template-rows: 100px 1fr 1fr 1fr 125px;
     gap:10px;
     min-height: 100vh;
@@ -40,6 +40,7 @@
 
 .footer {
     grid-area: footer;
+    display: grid;
 }
 
 .sectionA {
@@ -59,10 +60,12 @@
 
 .aside {
     grid-area: aside;
+    display: grid;
 }
 
 .nav {
     grid-area: nav;
+    display: grid;
 }
 
 .nav_ul {
@@ -191,7 +194,6 @@ a{
     }
 }
 
-
 @media (max-width: 400px) {
     .body-grid {
         display: grid;
@@ -204,7 +206,8 @@ a{
             "sectionC"
             "aside"
             "footer";
-        grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 125px;
+        grid-template-rows: 100px 1fr 1fr 1fr 1fr auto 125px;
+        
     }
 }
 
