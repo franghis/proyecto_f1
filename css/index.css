@@ -93,6 +93,10 @@
 }
 
 
+.img {
+    max-width: 100%
+}
+
 .div_h1 {
     text-align: center; 
     background-color: #CECECE;
