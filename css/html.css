@@ -46,6 +46,7 @@
 
 .sectionD {
     grid-area: sectionD;
+    place-items: center;
     display: grid;
     max-height: 500vh; 
     grid-template-columns: 1fr 1.5fr 1fr; 
@@ -54,12 +55,21 @@
     grid-row-gap: 10px;
     width: 100%;
     max-height: 100%;
-    background-color: #da0c0c;
+    background-color: #ffffff;
 }
 
+.box{
+    border: 2px solid #ffffff;
+    background-color: rgb(216, 216, 216);
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+}
 
 .sectionE {
     grid-area: sectionE;
+    place-items: center;
+    border-top: #222823;
     display: grid;
     max-height: 500vh; 
     grid-template-columns: 1fr 2fr; 
@@ -70,21 +80,12 @@
 
 
 
-.div__pilotos {
-}
-
-.div__teams {
-}
-
-.div__puntos {
-}
-
 .nav {
     grid-area: nav;
 }
 
 #img {
-    transform: scale(0.5);
+    transform: scale(0.8);
 }
 
 .nav_ul {
@@ -106,8 +107,8 @@
     color: white;
 }
 
-.card_teams {
-    border: 3px solid #c61b1b;
+.container {
+    border: 3px solid #1bc69e;
 }
 
 #a { 
@@ -153,68 +154,65 @@ ul {
     background:linear-gradient(5deg, #c61b1b, #222823);
     padding: 2rem 8rem;
     border-radius: 0 .2em .2em 0;
-}
+    }
+    
+    
+.nav_ul {
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #222823;
+    }
 
-@media (max-width: 800px) {
-    .body-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas:
-            "header header header header"
-            "nav nav nav nav"
-            "sectionA sectionA sectionA sectionA"
-            "sectionB sectionB sectionB aside"
-            "sectionC sectionC sectionC aside"
-            "footer footer footer footer";
-        grid-template-rows: 100px 1fr 1fr 1fr 1fr 125px;
+.nav_li {
+        background-color: #222823;
+        padding: 1em;
+}        
+
+
+@media (min-width: 480px) {
+    .sectionD {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
+@media (max-width: 480px) {
+    .sectionD {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 
-@media (max-width: 400px) {
+@media (max-width: 768px) {
     .body-grid {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
             "header"
             "nav"
-            "sectionA"
-            "sectionB"
-            "sectionC"
+            "sectionD"
             "aside"
             "footer";
-        grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 125px;
+        grid-template-rows: 100px 1fr;
+        background-color: #222823;
     }
 }
 
-@media (max-width: 800px) {
-    .body-gridB {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas:
-            "header header header header"
-            "nav nav nav nav"
-            "sectionA sectionA sectionA sectionA"
-            "sectionB sectionB sectionB sectionB "
-            "sectionC sectionC sectionC sectionC "
-            "aside aside aside aside"
-            "footer footer footer footer";
-        grid-template-rows: 100px 1fr 1fr 1fr 1fr 125px;
+@media (min-width: 768px) {
+    .sectionD {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 400px) {
-    .body-gridB {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "header"
-            "nav"
-            "sectionA"
-            "sectionB"
-            "sectionC"
-            "aside"
-            "footer";
-        grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 125px;
+
+@media (min-width: 1200px) {
+    .sectionD {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
     }
 }
+
+
+
+
