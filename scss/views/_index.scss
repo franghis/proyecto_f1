@@ -10,6 +10,8 @@
     border: 1px solid black;
 }
 
+
+
 /*BODY*/
 
 .body-grid {
@@ -32,7 +34,7 @@
 
 .header {
     grid-area: header;
-    background: #da0c0c;
+    background: var(--secondary);
     background-image: linear-gradient(to top, #c61b1b , rgb(255, 255, 255));
     background-image: url("../images/logo_f1.PNG");
     background-size: contain;
@@ -75,16 +77,14 @@
 /*ARTICLE*/
 
 .article_card {
-    background-color:rgb(216, 216, 216);
-    border-radius: 10px;color: ;
+    background-color: var(--article);
+    border-radius: 10px;
 }
 
-#p {
-    text-decoration: none;
-    color: rgb(87, 147, 149);
-    background-color: aliceblue;
-    border-top: #575A5E;
+p {
     border-width: 10ch;
+    $text-lg: 32px;
+    $text-base: 'barlow', sans-serif;
 }
 
 
@@ -102,11 +102,11 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: #222823;
+    background-color: var(--primary);
 }
 
 .nav_li {
-    background-color: #222823;
+    background-color: var(--primary);
     padding: 1em;
 }
 
@@ -115,13 +115,18 @@
 }
 
 
-
-
 /*MISC*/
 
+.box {
+    border: 2px solid: var(--border);
+    background-color: rgb(216, 216, 216);
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+}
 
 .card {
-    border: 3px solid #c61b1b;
+    border: 2px solid #c61b1b;
 }
 
 .img {
@@ -132,10 +137,15 @@
     font-size: large; 
     font-style: normal;
     font-weight: 100;
-    color: #222823;
-    border-color: #222823;
+    color: var(--primary);
+    border-color: var(--primary);
 }
     
+p {
+    text-align: center;
+    font-size: large;
+    font-weight: 300;
+}
 
 
 li {
@@ -172,7 +182,7 @@ a{
         max-height: 100%;}
     .footer_nav {
         color: white;
-        background:linear-gradient(45deg, #c61b1b),#222823));
+        background:linear-gradient(45deg, #c61b1b),(#222823);
         border-radius: 0 .1em .1em 0;
 }
 

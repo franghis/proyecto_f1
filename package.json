@@ -18,7 +18,12 @@
     "url": "https://github.com/franghis/proyecto_f1/issues"
   },
   "homepage": "https://github.com/franghis/proyecto_f1#readme",
-  "keywords": [],
+  "keywords": [
+  "F1",
+  "PILOTOSF1",
+  "EQUIPOSF1",
+  "CAREERA F1"    
+  ],
   "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.19"
