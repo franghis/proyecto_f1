@@ -118,20 +118,17 @@ p {
 /*MISC*/
 
 .box {
-    border: 2px solid: var(--border);
+    border: 2px solid; 
+    color: $secondary;
     background-color: rgb(216, 216, 216);
     text-align: center;
     padding-top: 10px;
     border-radius: 10px;
-}
-
-.card {
-    border: 2px solid #c61b1b;
-}
-
-.img {
-    max-width: 100%
-}
+    }
+    .card {
+    border: 2px solid #c61b1b;}
+    .img {
+    max-width: 100%;}
 
 #a { 
     font-size: large; 
