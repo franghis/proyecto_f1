@@ -32,16 +32,13 @@
 
 .header {
     grid-area: header;
+    text-align: right;
     background: #da0c0c;
     background-image: linear-gradient(to top, #c61b1b , rgb(255, 255, 255));
     background-image: url("../images/logo_f1.PNG");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: 0 50%;
-}
-
-.header_nav {
-    text-align: justify;
+    background-position: 0 50%;   
 }
 
 

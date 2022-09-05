@@ -10,8 +10,6 @@
     border: 1px solid black;
 }
 
-
-
 /*BODY*/
 
 .body-grid {
@@ -34,16 +32,13 @@
 
 .header {
     grid-area: header;
-    background: var(--secondary);
+    text-align: right;
+    background: #da0c0c;
     background-image: linear-gradient(to top, #c61b1b , rgb(255, 255, 255));
     background-image: url("../images/logo_f1.PNG");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: 0 50%;
-}
-
-.header_nav {
-    text-align: justify;
+    background-position: 0 50%;   
 }
 
 
@@ -71,20 +66,23 @@
 .aside {
     grid-area: aside;
     display: grid;
+    max-width: 100%;
 }
 
 
 /*ARTICLE*/
 
 .article_card {
-    background-color: var(--article);
-    border-radius: 10px;
+    background-color:rgb(216, 216, 216);
+    border-radius: 10px;color: ;
 }
 
-p {
+#p {
+    text-decoration: none;
+    color: rgb(87, 147, 149);
+    background-color: aliceblue;
+    border-top: #575A5E;
     border-width: 10ch;
-    $text-lg: 32px;
-    $text-base: 'barlow', sans-serif;
 }
 
 
@@ -92,22 +90,22 @@ p {
 
 .nav {
     grid-area: nav;
-    display: grid;
 }
 
 .nav_ul {
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
+    align-items: stretch;
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: var(--primary);
+    background-color: #222823;
 }
 
 .nav_li {
-    background-color: var(--primary);
+    background: #c61b1b;
     padding: 1em;
+    background-color: #222823;
 }
 
 .nav_li a {
@@ -115,18 +113,21 @@ p {
 }
 
 
+
+
 /*MISC*/
 
 .box {
-    border: 2px solid: var(--border);
+    border: 2px solid #821313;
     background-color: rgb(216, 216, 216);
     text-align: center;
     padding-top: 10px;
-    border-radius: 10px;
+    border-radius: 2px;
 }
 
+
 .card {
-    border: 2px solid #c61b1b;
+    border: 3px solid #c61b1b;
 }
 
 .img {
@@ -137,8 +138,8 @@ p {
     font-size: large; 
     font-style: normal;
     font-weight: 100;
-    color: var(--primary);
-    border-color: var(--primary);
+    color: #222823;
+    border-color: #222823;
 }
     
 p {
@@ -146,6 +147,7 @@ p {
     font-size: large;
     font-weight: 300;
 }
+
 
 
 li {
@@ -164,7 +166,6 @@ a{
 /*FOOTER*/
 
 .footer {
-    grid-area: footer;
     font-size: 1.4rem;
     font-weight: 100;
     max-height: 100%;
@@ -174,16 +175,22 @@ a{
     background-image: url("../images/pirelli_footer.png");
     background-size: cover;
     background-position: 0 50%;
+}
 
+.footer {
+    grid-area: footer;
     display: grid;
-    }
-    .footer_div img {
-        width: 100%;
-        max-height: 100%;}
-    .footer_nav {
-        color: white;
-        background:linear-gradient(45deg, #c61b1b),(#222823);
-        border-radius: 0 .1em .1em 0;
+}
+
+.footer_div img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.footer_nav {
+    color: white;
+    background:linear-gradient(45deg, #c61b1b),#222823));
+    border-radius: 0 .1em .1em 0;
 }
 
 
@@ -253,4 +260,3 @@ a{
         grid-template-rows: 100px 290px auto auto auto 1fr 125px;
     }
 }
-
