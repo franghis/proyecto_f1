@@ -256,6 +256,15 @@ a{
     font-family: "Audiowide", sans-serif;
 }
 
+.footer_social {
+    padding-left: 15px;
+    justify-content: space-between 4px;
+}
+
+li .footer_social {
+    padding-left: 5px;
+}
+
 /*MEDIA*/
 
 @media (max-width: 1024px) {
