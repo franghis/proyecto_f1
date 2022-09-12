@@ -47,6 +47,10 @@
 .sectionA {
     grid-area: sectionA;
     display: grid;
+    .h1 {
+        text-align: left;
+        
+    }
 }
 
 .sectionB {
@@ -74,7 +78,7 @@
 
 .article_card {
     background-color:rgb(216, 216, 216);
-    border-radius: 10px;color: ;
+    border-radius: 10px;
 }
 
 #p {
@@ -118,7 +122,6 @@
 /*MISC*/
 
 .box {
-<<<<<<< HEAD
     border: 2px solid; 
     color: $secondary;
     background-color: rgb(216, 216, 216);
@@ -130,23 +133,6 @@
     border: 2px solid #c61b1b;}
     .img {
     max-width: 100%;}
-=======
-    border: 2px solid #821313;
-    background-color: rgb(216, 216, 216);
-    text-align: center;
-    padding-top: 10px;
-    border-radius: 2px;
-}
-
-
-.card {
-    border: 3px solid #c61b1b;
-}
-
-.img {
-    max-width: 100%
-}
->>>>>>> aplicando_sass
 
 #a { 
     font-size: large; 
@@ -203,7 +189,7 @@ a{
 
 .footer_nav {
     color: white;
-    background:linear-gradient(45deg, #c61b1b),#222823));
+    background:linear-gradient(45deg, #c61b1b),(#222823);
     border-radius: 0 .1em .1em 0;
 }
 

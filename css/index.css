@@ -45,6 +45,16 @@
     text-align: justify;
 }
 
+.header_p {
+    text-align: center;
+    font-size: large;
+    font-weight: 300;
+    padding: 20px;
+    font-size: 38px;
+    letter-spacing: 2px;
+    font-weight: 900;
+    font-family: 'barlow', sans-serif;
+}
 
 /*SECTIONS*/
 
@@ -71,6 +81,9 @@
     grid-area: aside;
     display: grid;
 }
+img {
+    max-width: 100%;
+}
 
 
 /*ARTICLE*/
@@ -80,7 +93,18 @@
     border-radius: 10px;
 }
 
-#p {
+
+.box_aside {
+    border: 2px solid #821313;
+    background-color: #000000;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 2px;
+
+}
+
+
+.main_text {
     text-decoration: none;
     color: rgb(87, 147, 149);
     background-color: aliceblue;
@@ -145,13 +169,42 @@
     border-color: #222823;
 }
     
-p {
-    text-align: center;
-    font-size: large;
-    font-weight: 300;
+
+
+.article_h1 {
+    font-size: 45px;
+    text-align: left;
+    padding: 20px;
+    font-family: "Audiowide", sans-serif;
+    letter-spacing: 1px;
+    text-decoration-line: underline;
 }
 
+.article_h2 {
+    font-size: 38px;
+    text-align: left;
+    padding: 20px;
+    font-family: "Audiowide", sans-serif;
+    letter-spacing: 1px;
+    text-decoration-line: underline;
+}
 
+.article_h3 {
+    font-size: 38px;
+    text-align: left;
+    padding: 20px;
+    font-family: "Audiowide", sans-serif;
+    letter-spacing: 1px;
+    text-decoration-line: underline;
+}
+
+p {
+    text-align: left;
+    padding: 20px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-family: 'serif', "georgia";
+}
 
 li {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -197,6 +250,12 @@ a{
 }
 
 
+.footer_ul { 
+    font-size: 14px;
+    padding: 10px;
+    font-family: "Audiowide", sans-serif;
+}
+
 /*MEDIA*/
 
 @media (max-width: 1024px) {
@@ -204,46 +263,66 @@ a{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
-            "header header header header"
-            "nav nav nav nav"
+            "header header header"
+            "nav nav nav"
             "sectionA sectionA sectionA"
             "sectionB sectionB sectionB"
             "sectionC sectionC sectionC"
             "aside aside aside"
             "footer footer footer";
+            grid-template-rows: 100px 290px auto auto auto 1fr 125px;
     }
-    .borde nav {
-        block-size: 100%;
+    .header_p{
+        font-size: 16px ;
+        text-align: right;
+    }
+    .box.aside {
+        max-width: 10%;
+    }
+    .img {
+        max-width: 50%;
+    }
+
+    .border nav {
         background-color: #222823;
     }
     .nav_ul {
-        background-color: #222823;    
-    }   
-    .aside {
-        max-width: 50%;
+        background-color: #222823; 
+        align-items: center;   
     }
 }
 
 @media (max-width: 768px) {
     .body-grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
-            "header header header header"
-            "nav nav nav nav"
-            "sectionA sectionA sectionA sectionA"
-            "sectionB sectionB sectionB sectionB "
-            "sectionC sectionC sectionC sectionC "
-            "aside aside aside aside"
-            "footer footer footer footer";
-        grid-template-rows: 100px 290px auto auto auto 1fr 125px;
+            "header header"
+            "nav nav"
+            "sectionA sectionA"
+            "sectionB sectionB"
+            "sectionC sectionC"
+            "aside aside"
+            "footer footer";
+            grid-template-rows: 100px 290px auto auto auto 1fr 125px;
     }
-    .borde nav {
-        block-size: 80%;
+    .header_p{
+        font-size: 14px ;
+        text-align: right;
+    }
+    .box.aside {
+        max-width: 10%;
+    }
+    .img {
+        max-width: 50%;
+    }
+
+    .border nav {
         background-color: #222823;
     }
     .nav_ul {
-        background-color: #222823;    
+        background-color: #222823; 
+        align-items: center;   
     }
     
 }
@@ -263,4 +342,3 @@ a{
         grid-template-rows: 100px 290px auto auto auto 1fr 125px;
     }
 }
-
