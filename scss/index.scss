@@ -3,15 +3,20 @@
 
 @import "./misc/variables";
 @import "./misc/normalize";
+@import "./misc/styles";
 
 /* PARTIALS */
 
 @import "./partials/header";
 @import "./partials/footer";
+@import "./partials/grid";
+@import "./partials/navigation";
+
 
 /* VIEWS */
 
+@import "./views/index";
 @import "./views/about";
 @import "./views/contact";
-@import "./views/index";
+
 

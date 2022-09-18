@@ -1,0 +1,91 @@
+/*MEDIA QUERYS - INDEX*/
+
+@media (max-width: 1024px) {
+    .body-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "sectionA sectionA sectionA"
+        "sectionB sectionB sectionB"
+        "sectionC sectionC sectionC"
+        "aside aside aside"
+        "footer footer footer";
+        grid-template-rows: 100px 290px auto auto auto 1fr 125px;
+    }
+    .header_p{
+        font-size: 16px ;
+        text-align: right;
+    }
+    .box.aside {
+        max-width: 10%;
+    }
+    .img {
+        max-width: 50%;
+    }
+    .border nav {
+        background-color: $primary;
+    }
+    .nav_ul {
+        background-color: $primary; 
+        align-items: center;
+        flex-flow: column wrap;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .body-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "header header"
+        "nav nav"
+        "sectionA sectionA"
+        "sectionB sectionB"
+        "sectionC sectionC"
+        "aside aside"
+        "footer footer";
+        grid-template-rows: 100px 290px auto auto auto 1fr 125px;
+    }
+    .header_p{
+        font-size: 14px ;
+        text-align: right;
+    }
+    .box.aside {
+        max-width: 10%;
+    }
+    .img {
+        max-width: 50%;
+    }
+    .border nav {
+        background-color: $primary;
+    }
+    .nav_ul {
+        background-color: $primary; 
+        align-items: center;
+        flex-flow: column wrap;
+        max-width: 100%;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .body-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "nav"
+            "sectionA"
+            "sectionB"
+            "sectionC"
+            "aside"
+            "footer";
+        grid-template-rows: 100px 290px auto auto auto 1fr 125px;
+    }
+}
+
+
