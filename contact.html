@@ -8,49 +8,52 @@
     <meta name="keywords" content="F1, PROYECTOF1, CONTACTO F1">
     <title>Contacto - Proyecto F1 </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/translated.css">
     <link rel="stylesheet" href="./images/logof1.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="./css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide"> 
 </head>
-<body class="body-grid">
+<body class="body-grid__contact">
   <header class="border header">
     <p class="header_p">PROYECTO F1</p>
   </header>
-  <article class="box">
-    <div class="div_h1">
-      <div style="text-align:center">
-        <h1>CONTACTANOS</h1>
-        <p>REGISTRO</p>
-      </div>
-    <div class="row">
-      <div class="column">
-        <img src="../images/fondo_01.png" alt="">
-      </div>
+  <section class="border section__contact">  
+    <article class="box_contact">
+      <div class="div_h1">
+        <div style="text-align:center">
+          <h1>CONTACTANOS</h1>
+          <p>REGISTRO</p>
+        </div>
+      <div class="row">
         <div class="column">
-          <form action="/action_page.php">
-            <label for="fname">Nombre</label>
-            <input type="text" id="fname" name="firstname" placeholder="Tu Nombre..">
-            <label for="lname">Apellido</label>
-            <input type="text" id="lname" name="lastname" placeholder="Tu Apellido..">
-            <label for="country">Pais</label>
-            <select id="country" name="Pais">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
-              <option value="argentina">Argentina</option>
-              <option value="chile">Chile</option>
-              <option value="uruguay">Uruguay</option>
-              <option value="peru">Peru</option>
-              <option value="otros">Otros</option>
-            </select>
-            <label for="subject">Asunto</label>
-            <textarea id="subject" name="subject" placeholder="Escribe algo.." style="height:100px"></textarea>
-            <input type="submit" value="Enviar">
-          </form>
+          <img src="../images/fondo_01.png" alt="">
+        </div>
+          <div class="column">
+            <form action="/action_page.php">
+              <label for="fname">Nombre</label>
+              <input type="text" id="fname" name="firstname" placeholder="Tu Nombre..">
+              <label for="lname">Apellido</label>
+              <input type="text" id="lname" name="lastname" placeholder="Tu Apellido..">
+              <label for="country">Pais</label>
+              <select id="country" name="Pais">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                <option value="argentina">Argentina</option>
+                <option value="chile">Chile</option>
+                <option value="uruguay">Uruguay</option>
+                <option value="peru">Peru</option>
+                <option value="otros">Otros</option>
+              </select>
+              <label for="subject">Asunto</label>
+              <textarea id="subject" name="subject" placeholder="Escribe algo.." style="height:100px"></textarea>
+              <input type="submit" value="Enviar">
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-  </article>  
+    </article>  
+  </section>
   <nav class="border nav">
     <ul class="nav_ul">
       <li class="nav_li animate__animated animate__backInDown">
@@ -76,9 +79,8 @@
       <li class="nav_li animate__animated animate__backInDown">
         <button type="button" class="btn btn-outline-danger">
            <a>CONTACTO</a>
-       </button>
-    </li>
-</ul>
+        </button>
+      </li>
     </ul>
   </nav> 
   <footer class="border footer">

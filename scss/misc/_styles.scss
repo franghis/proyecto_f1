@@ -1,29 +1,14 @@
-.card {
-    border: 3px solid $secondary;
+h1 {
+    font-family: $text-page;
+    font-size: $text-lg; 
 }
 
-.img {
-    max-width: 100%
+h2{
+    font-family: $text-page;
+    font-size: $text-lg;
 }
 
-#a { 
-    font-size: large; 
-    font-style: normal;
-    font-weight: 100;
-    color: #222823;
-    border-color: #222823;
-}
-    
-
-li {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-ul {
-    list-style: none;
-    text-shadow: #222823;
-}
-
-a{
-    color: $secondary;
+h3{
+    font-family: $text-page;
+    font-size: $text-lg;
 }
