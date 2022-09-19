@@ -3,12 +3,15 @@
 /*PALETTE*/
 $primary: #222823;
 $secondary: #da0c0c;
-$border:#821313 ;
-$article: rgb(216, 216, 216);
+$border:#821313;
+$article: #d7d3d3;
+$color-font: #cbcbcb;
 
 /*FONT - FAMILY*/
-$text-base: 'barlow', sans-serif;
+$text-base: 'serif', "georgia";
 $text-alt:'Roboto slab', serif;
+$text-title: "Audiowide", sans-serif;
+$text-page: "Arial", Helvetica, sans-serif;
 
 /*FONT SIZES*/
 $text-xl: 45px;

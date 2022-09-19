@@ -119,6 +119,7 @@
 .border {
   border: 1px solid black; }
 
+<<<<<<< HEAD
 /*BODY*/
 .body-grid {
   display: grid;
@@ -254,6 +255,16 @@ a {
   color: white;
   background: linear-gradient(45deg, #c61b1b), #222823;
   border-radius: 0 .1em .1em 0; }
+=======
+.footer_social {
+    padding-left: 25px;
+    justify-content: space-between 4px;
+}
+
+li .footer_social {
+    padding-left: 10px;
+}
+>>>>>>> rama1
 
 /*MEDIA*/
 @media (max-width: 1024px) {

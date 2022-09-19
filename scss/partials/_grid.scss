@@ -1,0 +1,265 @@
+/*BODY - INDEX*/
+
+.body-grid__index {
+    display: grid;
+        grid-template-areas: 
+            "nav header header"
+            "nav sectionA sectionA"
+            "nav sectionB aside"
+            "nav sectionC aside"
+            "nav footer footer";
+        grid-template-columns: 20% auto 17% ;
+        grid-template-rows: 100px 1fr 1fr 1fr 125px;
+        gap:10px;
+        min-height: 100vh;
+    .border {
+        border: 1px solid black;
+    }
+}
+
+/*BODY - HTML*/
+
+.body-grid__nav1 {
+    display: grid;
+    grid-template-areas: 
+        "nav header header"
+        "nav sectionD sectionD"
+        "nav footer footer";
+    grid-template-columns: 20% auto 15%;
+    grid-template-rows: 100px 1fr 125px;
+    gap:10px;
+    min-height: 100vh;
+}
+
+.body-grid__nav2 {
+    display: grid;
+    grid-template-areas: 
+        "nav header header"
+        "nav sectionD sectionD"
+        "nav footer footer";
+    grid-template-columns: 20% auto 15%;
+    grid-template-rows: 100px 1fr 125px;
+    gap:10px;
+    min-height: 100vh;
+}
+
+.body-grid__nav3 {
+    display: grid;
+    grid-template-areas: 
+        "nav header header"
+        "nav sectionE sectionE"
+        "nav footer footer";
+    grid-template-columns: 20% auto 15%;
+    grid-template-rows: 100px 1fr 125px;
+    gap:10px;
+    min-height: 100vh;
+}
+
+.body-grid__contact {
+    display: grid;
+    grid-template-areas: 
+        "nav header header"
+        "nav section__contact section__contact"
+        "nav footer footer";
+    grid-template-columns: 20% auto 15%;
+    grid-template-rows: 100px 1fr 125px;
+    gap:10px;
+    min-height: 100vh;
+}
+
+
+
+/*SECTIONS - INDEX*/
+
+.sectionA {
+    grid-area: sectionA;
+    display: grid;
+    .box {
+        border: 2px solid $border;
+        background-color: $article;
+        text-align: center;
+        padding-top: 10px;
+        border-radius: 2px;
+    }
+    .article_h1 {
+        font-size: $text-xl;
+        text-align: left;
+        padding: 20px;
+        font-family: $text-title;
+        letter-spacing: 1px;
+        text-decoration-line: underline;
+    }
+    p {
+        text-align: left;
+        padding: 20px;
+        font-size: 22px;
+        letter-spacing: 1px;
+        font-family: $text-base;
+    }
+}
+
+.sectionB {
+    grid-area: sectionB;
+    display: grid;
+    .box {
+        border: 2px solid $border;
+        background-color: $article;
+        text-align: center;
+        padding-top: 10px;
+        border-radius: 2px;
+    }
+    .article_h2 {
+        font-size: $text-lg;
+        text-align: left;
+        padding: 20px;
+        font-family: $text-title;
+        letter-spacing: 1px;
+        text-decoration-line: underline;
+    }
+    p {
+        text-align: left;
+        padding: 20px;
+        font-size: 22px;
+        letter-spacing: 1px;
+        font-family: $text-base;
+    }
+}
+
+.sectionC {
+    grid-area: sectionC;
+    display: grid;
+    .box {
+        border: 2px solid $border;
+        background-color: $article;
+        text-align: center;
+        padding-top: 10px;
+        border-radius: 2px;
+    }
+    .article_h3 {
+        font-size: $text-lg;
+        text-align: left;
+        padding: 20px;
+        font-family: $text-title;
+        letter-spacing: 1px;
+        text-decoration-line: underline;
+    }
+    p {
+        text-align: left;
+        padding: 20px;
+        font-size: 22px;
+        letter-spacing: 1px;
+        font-family: $text-base;
+    }
+}
+
+
+.sectionD {
+    grid-area: sectionD;
+    place-items: center;
+    display: grid;
+    max-height: 500vh; 
+    grid-template-columns: 1fr 1.5fr 1fr; 
+    grid-column-gap: 10px;
+    grid-template-rows: auto;
+    grid-row-gap: 10px;
+    width: 100%;
+    max-height: 100%;
+    background-color: #ffffff;
+    .box {
+        border: 2px solid #821313;
+        background-color: rgb(216, 216, 216);
+        text-align: center;
+        padding-top: 10px;
+        border-radius: 10px;
+    }
+    .flags.box {
+        max-width: 50%;
+    }
+}
+
+
+.sectionE {
+    grid-area: sectionE;
+    place-items: center;
+    border-top: $primary;
+    display: grid;
+    max-height: 500vh; 
+    grid-template-columns: 1fr 1fr; 
+    grid-column-gap: 10px;
+    grid-template-rows: auto;
+    grid-row-gap: 10px;
+    .box {
+        border: 2px solid $border;
+        background-color: rgb(216, 216, 216);
+        text-align: center;
+        padding-top: 10px;
+        border-radius: 10px;
+    }
+}
+
+.section__contact {
+    grid-area: section__contact;
+    place-items: center;
+    border-top: $primary;
+    display: grid;
+    max-height: 500vh; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-template-rows: auto;
+    grid-row-gap: 10px;
+    .box_contact {
+        border: 2px solid $border;
+        background-color: $article;
+        text-align: center;
+        align-content: center;
+        padding-top: 40px;
+        padding-left: 40px;
+        border-radius: 10px;
+    }
+}
+
+
+/*NAV -INDEX/HTML*/
+
+.nav {
+    grid-area: nav;
+    .nav_ul {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: stretch;
+        width: 100%;
+        overflow: hidden;
+        background-color: $primary;
+        align-items: center;       
+    }    
+    .nav_li {
+        background: $secondary;
+        padding: 1em;
+        background-color: $primary;
+        align-items: center;
+    }
+    .nav_li a {
+        color: $color-font;
+    }
+}
+
+
+/*ASIDE - INDEX*/
+
+.aside {
+    grid-area: aside;
+    display: grid;
+    
+    img {
+        max-width: 100%;
+    }
+    .box_aside {
+        border: 2px solid $border;
+        background-color: #000000;
+        text-align: center;
+        padding-top: 10px;
+        border-radius: 2px;
+        max-width: 100%;
+    }
+}
+

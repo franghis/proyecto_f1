@@ -1,15 +1,23 @@
 /*HEADER*/
+
 .header {
     grid-area: header;
-    background: #da0c0c;
+    text-align: right;
+    background: $secondary;
     background-image: linear-gradient(to top, #c61b1b , rgb(255, 255, 255));
     background-image: url("../images/logo_f1.PNG");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 0 50%;
-
-    .header_nav {
-    text-align: justify;
+    
+    .header_p {
+    text-align: center;
+    font-size: large;
+    font-weight: 300;
+    padding: 20px;
+    font-size: $text-lg;
+    letter-spacing: 5px;
+    font-weight: 900;
+    font-family: $text-title;
     }
 }
-
