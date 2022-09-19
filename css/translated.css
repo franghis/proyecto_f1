@@ -45,7 +45,6 @@
   border-radius: 10px; }
 
 #p {
-  text-decoration: none;
   color: #579395;
   background-color: aliceblue;
   border-top: #575A5E;
@@ -132,6 +131,7 @@
 /*HEADER*/
 .header {
   grid-area: header;
+  text-align: right;
   background: #da0c0c;
   background-image: linear-gradient(to top, #c61b1b, white);
   background-image: url("../images/logo_f1.PNG");
@@ -139,13 +139,12 @@
   background-repeat: no-repeat;
   background-position: 0 50%; }
 
-.header_nav {
-  text-align: justify; }
-
 /*SECTIONS*/
 .sectionA {
   grid-area: sectionA;
   display: grid; }
+  .sectionA .h1 {
+    text-align: left; }
 
 .sectionB {
   grid-area: sectionB;
@@ -158,40 +157,46 @@
 /*ASIDE*/
 .aside {
   grid-area: aside;
-  display: grid; }
+  display: grid;
+  max-width: 100%; }
 
 /*ARTICLE*/
 .article_card {
   background-color: #d8d8d8;
   border-radius: 10px; }
 
-p {
+#p {
+  text-decoration: none;
+  color: #579395;
+  background-color: aliceblue;
+  border-top: #575A5E;
   border-width: 10ch; }
 
 /*NAV*/
 .nav {
-  grid-area: nav;
-  display: grid; }
+  grid-area: nav; }
 
 .nav_ul {
   display: flex;
   flex-flow: column wrap;
-  align-items: center;
+  align-items: stretch;
   width: 100%;
   height: 100%;
   overflow: hidden;
   background-color: #222823; }
 
 .nav_li {
-  background-color: #222823;
-  padding: 1em; }
+  background: #c61b1b;
+  padding: 1em;
+  background-color: #222823; }
 
 .nav_li a {
   color: white; }
 
 /*MISC*/
 .box {
-  border: 2px solid #821313;
+  border: 2px solid;
+  color: #da0c0c;
   background-color: #d8d8d8;
   text-align: center;
   padding-top: 10px;
@@ -227,7 +232,6 @@ a {
 
 /*FOOTER*/
 .footer {
-  grid-area: footer;
   font-size: 1.4rem;
   font-weight: 100;
   max-height: 100%;
@@ -236,7 +240,10 @@ a {
   align-items: center;
   background-image: url("../images/pirelli_footer.png");
   background-size: cover;
-  background-position: 0 50%;
+  background-position: 0 50%; }
+
+.footer {
+  grid-area: footer;
   display: grid; }
 
 .footer_div img {
