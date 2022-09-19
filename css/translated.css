@@ -20,7 +20,6 @@ h2 {
   font-family: "Arial", Helvetica, sans-serif;
   font-size: 38px; }
 
-<<<<<<< HEAD
 .sectionB {
   grid-area: sectionB;
   display: grid; }
@@ -65,11 +64,6 @@ h2 {
 
 .nav_li a {
   color: white; }
-=======
-h3 {
-  font-family: "Arial", Helvetica, sans-serif;
-  font-size: 38px; }
->>>>>>> rama1
 
 /* PARTIALS */
 /*HEADER*/
@@ -122,7 +116,11 @@ h3 {
 /*BODY - INDEX*/
 .body-grid__index {
   display: grid;
-  grid-template-areas: "nav header header" "nav sectionA sectionA" "nav sectionB aside" "nav sectionC aside" "nav footer footer";
+  grid-template-areas: "nav header header"
+ "nav sectionA sectionA"
+ "nav sectionB aside"
+ "nav sectionC aside"
+ "nav footer footer";
   grid-template-columns: 20% auto 17%;
   grid-template-rows: 100px 1fr 1fr 1fr 125px;
   gap: 10px;
@@ -130,7 +128,6 @@ h3 {
   .body-grid__index .border {
     border: 1px solid black; }
 
-<<<<<<< HEAD
 /*HEADER*/
 .header {
   grid-area: header;
@@ -148,64 +145,6 @@ h3 {
   display: grid; }
   .sectionA .h1 {
     text-align: left; }
-=======
-/*BODY - HTML*/
-.body-grid__nav1 {
-  display: grid;
-  grid-template-areas: "nav header header" "nav sectionD sectionD" "nav footer footer";
-  grid-template-columns: 20% auto 15%;
-  grid-template-rows: 100px 1fr 125px;
-  gap: 10px;
-  min-height: 100vh; }
-
-.body-grid__nav2 {
-  display: grid;
-  grid-template-areas: "nav header header" "nav sectionD sectionD" "nav footer footer";
-  grid-template-columns: 20% auto 15%;
-  grid-template-rows: 100px 1fr 125px;
-  gap: 10px;
-  min-height: 100vh; }
-
-.body-grid__nav3 {
-  display: grid;
-  grid-template-areas: "nav header header" "nav sectionE sectionE" "nav footer footer";
-  grid-template-columns: 20% auto 15%;
-  grid-template-rows: 100px 1fr 125px;
-  gap: 10px;
-  min-height: 100vh; }
-
-.body-grid__contact {
-  display: grid;
-  grid-template-areas: "nav header header" "nav section__contact section__contact" "nav footer footer";
-  grid-template-columns: 20% auto 15%;
-  grid-template-rows: 100px 1fr 125px;
-  gap: 10px;
-  min-height: 100vh; }
-
-/*SECTIONS - INDEX*/
-.sectionA {
-  grid-area: sectionA;
-  display: grid; }
-  .sectionA .box {
-    border: 2px solid #821313;
-    background-color: #d7d3d3;
-    text-align: center;
-    padding-top: 10px;
-    border-radius: 2px; }
-  .sectionA .article_h1 {
-    font-size: 45px;
-    text-align: left;
-    padding: 20px;
-    font-family: "Audiowide", sans-serif;
-    letter-spacing: 1px;
-    text-decoration-line: underline; }
-  .sectionA p {
-    text-align: left;
-    padding: 20px;
-    font-size: 22px;
-    letter-spacing: 1px;
-    font-family: "serif", "georgia"; }
->>>>>>> rama1
 
 .sectionB {
   grid-area: sectionB;
@@ -332,28 +271,21 @@ h3 {
 /*ASIDE - INDEX*/
 .aside {
   grid-area: aside;
-<<<<<<< HEAD
   display: grid;
   max-width: 100%; }
-=======
-  display: grid; }
-  .aside img {
-    max-width: 100%; }
-  .aside .box_aside {
-    border: 2px solid #821313;
-    background-color: #000000;
-    text-align: center;
-    padding-top: 10px;
-    border-radius: 2px;
-    max-width: 100%; }
->>>>>>> rama1
 
 /*MEDIA QUERYS - INDEX*/
 @media (max-width: 1024px) {
   .body-grid__index {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "header header header" "nav nav nav" "sectionA sectionA sectionA" "sectionB sectionB sectionB" "sectionC sectionC sectionC" "aside aside aside" "footer footer footer";
+    grid-template-areas: "header header header"
+ "nav nav nav"
+ "sectionA sectionA sectionA"
+ "sectionB sectionB sectionB"
+ "sectionC sectionC sectionC"
+ "aside aside aside"
+ "footer footer footer";
     grid-template-rows: 100px 290px auto auto auto 1fr 125px; }
   .header_p {
     font-size: 16px;
@@ -369,7 +301,6 @@ h3 {
     align-items: center;
     flex-flow: column wrap; } }
 
-<<<<<<< HEAD
 #p {
   text-decoration: none;
   color: #579395;
@@ -394,49 +325,6 @@ h3 {
   background: #c61b1b;
   padding: 1em;
   background-color: #222823; }
-=======
-@media (max-width: 768px) {
-  .body-grid__index {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "header header" "nav nav" "sectionA sectionA" "sectionB sectionB" "sectionC sectionC" "aside aside" "footer footer";
-    grid-template-rows: 100px 290px auto auto auto 1fr 125px; }
-  .header_p {
-    font-size: 14px;
-    text-align: right; }
-  .box.aside {
-    max-width: 10%; }
-  .img {
-    max-width: 50%; }
-  .border nav {
-    background-color: #222823; }
-  .nav_ul {
-    background-color: #222823;
-    align-items: center;
-    flex-flow: column wrap;
-    max-width: 100%; } }
-
-@media (max-width: 480px) {
-  .body-grid__index {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "header" "nav" "sectionA" "sectionB" "sectionC" "aside" "footer";
-    grid-template-rows: 100px 290px auto auto auto 1fr 125px; } }
-
-/*MEDIA QUERYS - HTML P1*/
-@media (min-width: 1400px) {
-  .sectionD {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto; } }
-
-@media (max-width: 1024px) {
-  .body-grid__nav1 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "header header" "nav nav" "sectionD sectionD" "aside aside" "footer footer";
-    grid-template-rows: 100px 1fr;
-    background-color: #222823; } }
->>>>>>> rama1
 
 @media (min-width: 768px) {
   .sectionD {
@@ -463,7 +351,11 @@ h3 {
   .body-grid__nav2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "header header" "nav nav" "sectionD sectionD" "aside aside" "footer footer";
+    grid-template-areas: "header header"
+ "nav nav"
+ "sectionD sectionD"
+ "aside aside"
+ "footer footer";
     grid-template-rows: 100px 1fr; }
   .nav_ul {
     place-items: center; } }
@@ -472,7 +364,11 @@ h3 {
   .body-grid__nav2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "header header" "nav nav" "sectionD sectionD" "aside aside" "footer footer";
+    grid-template-areas: "header header"
+ "nav nav"
+ "sectionD sectionD"
+ "aside aside"
+ "footer footer";
     grid-template-rows: 100px 1fr; }
   .sectionD {
     grid-template-columns: none; } }
@@ -482,7 +378,11 @@ h3 {
   .body-grid__nav3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "header header" "nav nav" "sectionE sectionE" "aside aside" "footer footer";
+    grid-template-areas: "header header"
+ "nav nav"
+ "sectionE sectionE"
+ "aside aside"
+ "footer footer";
     grid-template-rows: 100px 1fr; }
   .sectionE {
     grid-template-columns: none; } }
@@ -491,7 +391,11 @@ h3 {
   .body-grid__nav3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "header header" "nav nav" "sectionE sectionE" "aside aside" "footer footer";
+    grid-template-areas: "header header"
+ "nav nav"
+ "sectionE sectionE"
+ "aside aside"
+ "footer footer";
     grid-template-rows: 100px 1fr; }
   .nav_ul {
     place-items: center; } }
@@ -501,7 +405,11 @@ h3 {
   .body-grid__contact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "header header" "nav nav" "section__contact section__contact" "aside aside" "footer footer";
+    grid-template-areas: "header header"
+ "nav nav"
+ "section__contact section__contact"
+ "aside aside"
+ "footer footer";
     grid-template-rows: 100px 1fr; }
   .section__contact {
     grid-template-columns: none; } }
@@ -510,7 +418,11 @@ h3 {
   .body-grid__contact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "header header" "nav nav" "section__contact section__contact" "aside aside" "footer footer";
+    grid-template-areas: "header header"
+ "nav nav"
+ "section__contact section__contact"
+ "aside aside"
+ "footer footer";
     grid-template-rows: 100px 1fr;
     flex-flow: column wrap;
     min-height: 100vh; }
@@ -521,7 +433,11 @@ h3 {
   .body-grid__contact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "header header" "nav nav" "section__contact section__contact" "aside aside" "footer footer";
+    grid-template-areas: "header header"
+ "nav nav"
+ "section__contact section__contact"
+ "aside aside"
+ "footer footer";
     grid-template-rows: 100px 1fr;
     flex-flow: column wrap;
     min-height: 100vh; }
@@ -530,7 +446,6 @@ h3 {
 
 /* VIEWS */
 /*MISC*/
-<<<<<<< HEAD
 .box {
   border: 2px solid;
   color: #da0c0c;
@@ -544,10 +459,6 @@ h3 {
 
 .img {
   max-width: 100%; }
-=======
-.container {
-  border: 3px solid #1bc69e; }
->>>>>>> rama1
 
 #a {
   font-size: large;
@@ -563,7 +474,6 @@ ul {
   list-style: none; }
 
 /*FOOTER*/
-<<<<<<< HEAD
 .footer {
   font-size: 1.4rem;
   font-weight: 100;
@@ -584,9 +494,6 @@ ul {
   max-height: 100%; }
 
 .footer_nav {
-=======
-.footer_li {
->>>>>>> rama1
   color: white;
   background: linear-gradient(5deg, #c61b1b, #222823);
   padding: 2rem 8rem;
