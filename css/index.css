@@ -15,7 +15,11 @@
 /*BODY*/
 .body-grid {
   display: grid;
-  grid-template-areas: "nav header header" "nav sectionA sectionA" "nav sectionB aside" "nav sectionC aside" "nav footer footer";
+  grid-template-areas: "nav header header"
+ "nav sectionA sectionA"
+ "nav sectionB aside"
+ "nav sectionC aside"
+ "nav footer footer";
   grid-template-columns: 20% auto 17%;
   grid-template-rows: 100px 1fr 1fr 1fr 125px;
   gap: 10px;
@@ -119,143 +123,6 @@
 .border {
   border: 1px solid black; }
 
-<<<<<<< HEAD
-/*BODY*/
-.body-grid {
-  display: grid;
-  grid-template-areas: "nav header header" "nav sectionA sectionA" "nav sectionB aside" "nav sectionC aside" "nav footer footer";
-  grid-template-columns: 20% auto 17%;
-  grid-template-rows: 100px 1fr 1fr 1fr 125px;
-  gap: 10px;
-  min-height: 100vh; }
-
-/*HEADER*/
-.header {
-  grid-area: header;
-  text-align: right;
-  background: #da0c0c;
-  background-image: linear-gradient(to top, #c61b1b, white);
-  background-image: url("../images/logo_f1.PNG");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 0 50%; }
-
-/*SECTIONS*/
-.sectionA {
-  grid-area: sectionA;
-  display: grid; }
-  .sectionA .h1 {
-    text-align: left; }
-
-.sectionB {
-  grid-area: sectionB;
-  display: grid; }
-
-.sectionC {
-  grid-area: sectionC;
-  display: grid; }
-
-/*ASIDE*/
-.aside {
-  grid-area: aside;
-  display: grid;
-  max-width: 100%; }
-
-/*ARTICLE*/
-.article_card {
-  background-color: #d8d8d8;
-  border-radius: 10px; }
-
-#p {
-  text-decoration: none;
-  color: #579395;
-  background-color: aliceblue;
-  border-top: #575A5E;
-  border-width: 10ch; }
-
-/*NAV*/
-.nav {
-  grid-area: nav; }
-
-.nav_ul {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: stretch;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-color: #222823; }
-
-.nav_li {
-  background: #c61b1b;
-  padding: 1em;
-  background-color: #222823; }
-
-.nav_li a {
-  color: white; }
-
-/*MISC*/
-.box {
-  border: 2px solid;
-  color: #da0c0c;
-  background-color: #d8d8d8;
-  text-align: center;
-  padding-top: 10px;
-  border-radius: 10px; }
-
-.card {
-  border: 2px solid #c61b1b; }
-
-.img {
-  max-width: 100%; }
-
-#a {
-  font-size: large;
-  font-style: normal;
-  font-weight: 100;
-  color: #222823;
-  border-color: #222823; }
-
-p {
-  text-align: center;
-  font-size: large;
-  font-weight: 300; }
-
-li {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
-
-ul {
-  list-style: none;
-  text-shadow: #222823; }
-
-a {
-  color: #da0c0c; }
-
-/*FOOTER*/
-.footer {
-  font-size: 1.4rem;
-  font-weight: 100;
-  max-height: 100%;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  background-image: url("../images/pirelli_footer.png");
-  background-size: cover;
-  background-position: 0 50%; }
-
-.footer {
-  grid-area: footer;
-  display: grid; }
-
-.footer_div img {
-  width: 100%;
-  max-height: 100%; }
-
-.footer_nav {
-  color: white;
-  background: linear-gradient(45deg, #c61b1b), #222823;
-  border-radius: 0 .1em .1em 0; }
-=======
 .footer_social {
     padding-left: 25px;
     justify-content: space-between 4px;
@@ -264,14 +131,19 @@ a {
 li .footer_social {
     padding-left: 10px;
 }
->>>>>>> rama1
 
 /*MEDIA*/
 @media (max-width: 1024px) {
   .body-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "header header header header" "nav nav nav nav" "sectionA sectionA sectionA" "sectionB sectionB sectionB" "sectionC sectionC sectionC" "aside aside aside" "footer footer footer"; }
+    grid-template-areas: "header header header header"
+ "nav nav nav nav"
+ "sectionA sectionA sectionA"
+ "sectionB sectionB sectionB"
+ "sectionC sectionC sectionC"
+ "aside aside aside"
+ "footer footer footer"; }
   .borde nav {
     block-size: 100%;
     background-color: #222823; }
@@ -284,7 +156,13 @@ li .footer_social {
   .body-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "header header header header" "nav nav nav nav" "sectionA sectionA sectionA sectionA" "sectionB sectionB sectionB sectionB " "sectionC sectionC sectionC sectionC " "aside aside aside aside" "footer footer footer footer";
+    grid-template-areas: "header header header header"
+ "nav nav nav nav"
+ "sectionA sectionA sectionA sectionA"
+ "sectionB sectionB sectionB sectionB "
+ "sectionC sectionC sectionC sectionC "
+ "aside aside aside aside"
+ "footer footer footer footer";
     grid-template-rows: 100px 290px auto auto auto 1fr 125px; }
   .borde nav {
     block-size: 80%;
@@ -296,5 +174,11 @@ li .footer_social {
   .body-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: "header" "nav" "sectionA" "sectionB" "sectionC" "aside" "footer";
+    grid-template-areas: "header"
+ "nav"
+ "sectionA"
+ "sectionB"
+ "sectionC"
+ "aside"
+ "footer";
     grid-template-rows: 100px 290px auto auto auto 1fr 125px; } }
